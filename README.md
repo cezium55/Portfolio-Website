@@ -1,6 +1,6 @@
-# garvit-gaur-portfolio
+# Garvit Gaur Portfolio
 
-Personal portfolio, served by a small Node/Express backend instead of a static host — because a backend engineer's portfolio should have at least one real backend in it.
+Personal portfolio, served by a small Node/Express backend instead of a static host, because a backend engineer's portfolio should have at least one real backend in it.
 
 **Live demo:** _(add your deployed URL here once hosted)_
 
@@ -8,14 +8,14 @@ Personal portfolio, served by a small Node/Express backend instead of a static h
 
 The site is mostly static content, but it's served through Express with two real endpoints:
 
-- `GET /api/projects` — pulls repo data (stars, description, last-updated, topics) live from the GitHub API, with a 30-minute in-memory cache. The projects list on the page is never hand-typed or stale — it reflects what's actually on GitHub.
+- `GET /api/projects` — pulls repo data (stars, description, last-updated, topics) live from the GitHub API, with a 30-minute in-memory cache. The projects list on the page is never hand-typed or stale, it reflects what's actually on GitHub.
 - `POST /api/contact` — validates and rate-limits contact form submissions server-side (basic in-memory rate limiter, 3 requests / 10 min per IP).
 - `GET /api/health` — trivial uptime/health check, the kind you'd want before deploying anything behind a load balancer.
 
 ## Stack
 
 - Node.js + Express
-- Vanilla HTML/CSS/JS on the frontend (no framework — kept intentionally simple)
+- Vanilla HTML/CSS/JS on the frontend (no framework, kept intentionally simple)
 - GitHub REST API for live project data
 
 ## Running locally
@@ -44,7 +44,7 @@ Visit `http://localhost:3000`.
 
 ## Deploying
 
-Any Node host works (Render, Railway, Fly.io, a VPS). No build step required — just `npm install && npm start`.
+Any Node host works (Render, Railway, Fly.io, a VPS). No build step required, just `npm install && npm start`.
 
 ## Wiring up real email delivery
 
@@ -55,7 +55,7 @@ Any Node host works (Render, Railway, Fly.io, a VPS). No build step required —
 
 ## About me
 
-BCA graduate from GGSIPU. I build backend systems from first principles to understand how they actually work — see [mini-redis](https://github.com/cezium55/mini-redis) and the other projects on this site. Looking for backend / full-stack roles at startups.
+BCA graduate from GGSIPU. I build backend systems from first principles to understand how they actually work, see [mini-redis](https://github.com/cezium55/mini-redis) and the other projects on this site. Looking for backend / full-stack roles at startups.
 
 - GitHub: [github.com/cezium55](https://github.com/cezium55)
 - LinkedIn: [garvit-gaur-81507525b](https://www.linkedin.com/in/garvit-gaur-81507525b)
