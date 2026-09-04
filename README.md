@@ -2,7 +2,7 @@
 
 Personal portfolio, served by a small Node/Express backend instead of a static host, because a backend engineer's portfolio should have at least one real backend in it.
 
-**Live demo:** _(add your deployed URL here once hosted)_
+**Live:** _(https://cezium55-portolio.vercel.app/ )_
 
 ## Why Express instead of just static HTML
 
