@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Environment Variables (Secrets)
+.env
+.env.local
+
+# Python Virtual Environments
+.venv/
+venv/
+__pycache__/
+
+# System Files & Logs
+npm-debug.log*
+*.log
+.DS_Store

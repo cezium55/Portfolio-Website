@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Garvit Gaur — Backend Engineer</title>
+<meta name="description" content="Garvit Gaur — backend & full-stack engineer building systems from scratch. mini-redis, custom HTTP servers, distributed systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<div class="noise"></div>
+
+<header class="topbar">
+  <span class="topbar__mark">gg</span>
+  <nav class="topbar__nav">
+    <a href="#work">work</a>
+    <a href="#stack">stack</a>
+    <a href="#contact">contact</a>
+    <a href="https://github.com/cezium55" target="_blank" rel="noopener">github ↗</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__prompt">
+      <p class="terminal-line">
+        <span class="prompt-symbol">visitor@site</span><span class="prompt-colon">:</span><span class="prompt-path">~</span><span class="prompt-dollar">$</span>
+        <span id="typed"></span><span class="cursor">▌</span>
+      </p>
+    </div>
+    <h1 class="hero__title">Garvit Gaur</h1>
+    <p class="hero__role">Backend Engineer, building things down to the socket layer.</p>
+    <p class="hero__desc">
+      BCA graduate from GGSIPU. I like taking the pieces most people import as a library,
+      a key-value store, an HTTP server, a version control system, and writing them myself
+      to actually understand how they work. Looking for backend / full-stack roles at startups
+      that ship fast.
+    </p>
+    <div class="hero__links">
+      <a href="#work" class="btn btn--primary">See the work</a>
+      <a href="mailto:garvitgaur47@gmail.com" class="btn btn--ghost">Email me</a>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work" class="section">
+    <h2 class="section__heading">
+      <span class="section__label">01</span> things i've built
+    </h2>
+    <p class="section__sub">Live from the GitHub API, this list updates itself.</p>
+
+    <div id="project-tree" class="tree">
+      <p class="tree__loading">fetching repositories…</p>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section id="stack" class="section">
+    <h2 class="section__heading">
+      <span class="section__label">02</span> stack
+    </h2>
+
+    <div class="stack-grid">
+      <div class="stack-col">
+        <h3>languages</h3>
+        <ul>
+          <li>Python</li>
+          <li>TypeScript / JavaScript</li>
+          <li>C++</li>
+          <li>SQL</li>
+        </ul>
+      </div>
+      <div class="stack-col">
+        <h3>backend</h3>
+        <ul>
+          <li>FastAPI</li>
+          <li>Node.js / Express</li>
+          <li>AsyncIO</li>
+          <li>WebSockets</li>
+        </ul>
+      </div>
+      <div class="stack-col">
+        <h3>data</h3>
+        <ul>
+          <li>PostgreSQL</li>
+          <li>MongoDB</li>
+          <li>Redis</li>
+        </ul>
+      </div>
+      <div class="stack-col">
+        <h3>infra</h3>
+        <ul>
+          <li>Docker</li>
+          <li>Linux</li>
+          <li>Git</li>
+          <li>CI/CD basics</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section--contact">
+    <h2 class="section__heading">
+      <span class="section__label">03</span> get in touch
+    </h2>
+    <p class="section__sub">
+      Open to backend / full-stack roles, internships, and interesting problems.
+  
+    </p>
+
+    <form id="contact-form" class="contact-form">
+      <div class="form-row">
+        <label for="name">name</label>
+        <input type="text" id="name" name="name" required autocomplete="name">
+      </div>
+      <div class="form-row">
+        <label for="email">email</label>
+        <input type="email" id="email" name="email" required autocomplete="email">
+      </div>
+      <div class="form-row">
+        <label for="message">message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn--primary">Send message</button>
+      <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+    </form>
+
+    <div class="contact-links">
+      <a href="mailto:garvitgaur47@gmail.com">garvitgaur47@gmail.com</a>
+      <a href="https://www.linkedin.com/in/garvit-gaur-81507525b" target="_blank" rel="noopener">linkedin</a>
+      <a href="https://github.com/cezium55" target="_blank" rel="noopener">github</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Built with Node.js, Express, and no frontend framework, on purpose.</p>
+</footer>
+
+<script src="/main.js"></script>
+</body>
+</html>
