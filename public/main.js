@@ -1,3 +1,52 @@
+// --- matrix rain backdrop ---
+(function matrixRain() {
+  const canvas = document.getElementById('matrix-canvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduceMotion) return;
+
+  let width, height, columns, drops, fontSize;
+  const chars = 'アイウエオカキクケコサシスセソタチツテトナニヌネノ01';
+
+  function setup() {
+    width = canvas.width = window.innerWidth;
+    height = canvas.height = window.innerHeight;
+    fontSize = width < 640 ? 14 : 16;
+    columns = Math.floor(width / fontSize);
+    drops = new Array(columns).fill(0).map(() => Math.floor(Math.random() * -40));
+  }
+
+  function draw() {
+    ctx.fillStyle = 'rgba(5, 8, 5, 0.14)';
+    ctx.fillRect(0, 0, width, height);
+    ctx.font = fontSize + 'px monospace';
+
+    for (let i = 0; i < columns; i++) {
+      const char = chars[Math.floor(Math.random() * chars.length)];
+      const x = i * fontSize;
+      const y = drops[i] * fontSize;
+
+      ctx.fillStyle = 'rgba(170, 230, 190, 0.55)';
+      ctx.fillText(char, x, y);
+
+      if (y > 0) {
+        ctx.fillStyle = 'rgba(63, 209, 121, 0.22)';
+        ctx.fillText(char, x, y - fontSize);
+      }
+
+      if (y > height && Math.random() > 0.975) {
+        drops[i] = 0;
+      }
+      drops[i]++;
+    }
+  }
+
+  setup();
+  window.addEventListener('resize', setup);
+  setInterval(draw, 70);
+})();
+
 // --- one-time typing effect in the hero prompt ---
 (function typeIntro() {
   const el = document.getElementById('typed');
