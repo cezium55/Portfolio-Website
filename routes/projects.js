@@ -8,9 +8,8 @@ const GITHUB_USER = 'cezium55';
 // live stats (stars, last updated, description) from GitHub's API instead
 // of hardcoding them, so the site never goes stale.
 const FEATURED_REPOS = [
-  'mini-redis',
   'Posture-Monitor-Web',
-  'api-performance-monitor',
+  'consumer-complaints-radar',
   'caching-proxy-CLI',
 ];
 
